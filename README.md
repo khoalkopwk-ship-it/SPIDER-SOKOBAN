@@ -16,15 +16,6 @@
 
 ## 1. KIẾN TRÚC TỔNG THỂ
 
-```
-Sokoban_spider.py
- ├── Cấu hình chung & Tiện ích UI (COLORS, fonts, rounded_rect, Button)
- ├── Level (Data Class: Tường, Mục tiêu, Quái vật, Tọa độ Người Nhện)
- ├── LevelGenerator (Sinh bản đồ ngẫu nhiên bằng Reverse Simulation)
- ├── SokobanSolver (Bộ 3 giải thuật: BFS, DFS, UCS + Deadlock Pruning)
- └── Game Engine (Pygame loop, Event handling, Autoplay, Renderer)
-```
-
 ```mermaid
 graph TD
     A[LevelGenerator] -->|Sinh bản đồ có nghiệm| B[Level Data]
